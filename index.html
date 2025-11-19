@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zhihan Cao — Design & HCI Learner</title>
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logo">Zhihan</div>
+      <div class="col-6"></div>
+      <div class="col-4">
+        <ul>
+          <li><a href="#about">关于/About</a></li>
+          <li><a href="#projects">科研/Research</a></li>
+          <li><a href="#coursework">课内/Coursework</a></li>
+          <li><a href="#extracurricular">课外/Extracurricular</a></li>
+          <li><a href="#contact">联系/Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="about">
+  <div class="container">
+    <div class="row hero-row">
+    
+      <!-- LEFT: Empty space -->
+      <div class="col-2"></div>
+      
+      <!-- LEFT: Portrait -->
+      <div class="col-4 col-md-3 col-sm-10 hero-photo">
+        <img src="/img/czh.JPG" alt="Portrait">
+      </div>
+
+      <!-- RIGHT: Text -->
+      <div class="col-3 col-md-6 col-sm-12 hero-text">
+        <h1 class="cn-name">曹之菡</h1>
+        <div class="en-name">Zhihan Cao</div>
+        <div class="tagline">Design & HCI Learner</div>
+      </div>
+
+    </div>
+
+    <!-- BIO SECTION -->
+    <div class="row">
+      <div class="col-12 bio">
+        <p class="bio-cn">
+          现为浙江大学艺术与科技专业的学生，专心于交互设计领域，拥有一定的美学基础，熟练使用平面设计与三维设计软件。自学前端技术、单片机、数据分析与游戏开发等编程技能，积极参与多个设计与创新项目。参与人机交互领域的科研工作，参与与智能织物、食物交互等有形界面方向研究。
+        </p>
+        <p class="bio-en">
+          A student at Zhejiang University, majoring in Art and Technology, with a focus on interaction design. Possesses a solid foundation in aesthetics and is proficient in using graphic design and 3D design software. Has self-taught skills in front-end development, microcontrollers, data analysis, and game development, and actively participates in various design and innovation projects. Involved in research in the field of human-computer interaction, with experience in projects related to tangible interfaces, including smart textile and food interaction.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="project-section" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+    <!-- SECTION TITLE -->
+    <div class="project-section-title">科研项目 / <span style="font-weight:500;">Research Projects</span></div>
+    <div class="project-section-subtitle">
+      2025年3月加入浙大GYLab/智慧形态实验室，成为实习生，参与人机交互领域科研项目。<br>
+      Joined GYLab as an intern in March 2025, participating in human-computer interaction research projects to date.
+    </div>
+
+    <!-- TWO-COLUMN GRID -->
+    <div class="project-grid">
+
+      <!-- FLEXISENSE -->
+      <a href="/rs/project-flexisense.html">
+        <div class="project-card" style="background-image: url('/img/flexisense.png');">
+          <div class="project-overlay"></div>
+          <div class="project-text">
+            <div class="project-title">FlexiSense</div>
+            <div class="project-desc-en">
+              A Toolkit for Battery-Free Gesture<br>
+              Recognition via Garment Modification
+            </div>
+            <div class="project-desc-cn">一种通过服装改造实现无电池手势识别的工具包</div>
+          </div>
+        </div>
+      </a>
+      
+      <!-- AIRFOOD (改为不可跳转，点击显示锁提示) -->
+      <div class="project-card locked-card" style="background-image: url('/img/airfood.png');" role="button" tabindex="0" aria-label="AirFood (暂未公开)">
+        <div class="project-overlay"></div>
+        <div class="project-text">
+          <div class="project-title">AirFood</div>
+          <div class="project-desc-en">
+            A Pneumatic Morphing Dough Toolkit<br>
+            for Kindergarten Children's Learning of Shape Transformation
+          </div>
+          <div class="project-desc-cn">
+            一种用于幼儿园儿童几何形变学习的气动变形面团工具包
+          </div>
+        </div>
+
+        <!-- 锁提示层，默认隐藏，点击后显示 -->
+        <div class="lock-overlay" aria-hidden="true" hidden>
+          <img class="lock-icon" src="/img/lock.png" alt="锁定">
+          <div class="lock-text">论文投递中，暂未公开。</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FULL WIDTH CARD: UIST -->
+    <div class="project-grid-full">
+      <a href="project-uist25.html">
+        <div class="project-card project-card-full" style="background-image: url('/img/UIST.jpg');">
+          <div class="project-overlay"></div>
+          <div class="project-text">
+            <div class="project-title">Attended UIST 25</div>
+            <div class="project-desc-en">Korean, Busan</div>
+            <div class="project-desc-cn">人机交互领域用户界面技术方向顶级会议参会经历</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COURSEWORK ================= -->
+<section id="coursework" class="coursework-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+
+      <!-- center content -->
+      <div class="col-8">
+
+        <!-- title -->
+        <div class="coursework-title">
+          课程项目 / <span style="font-weight:500;">Coursework</span>
+        </div>
+        <div class="coursework-subtitle">
+          以交互设计方向课程为主，涵盖UI设计、服务设计、智能产品设计等内容。<br>
+          The courses mainly focus on interaction design, covering UI design,
+          service design, and smart product design.
+        </div>
+
+        <!-- 3-column responsive grid -->
+        <div class="coursework-grid">
+
+          <!-- coursework item 1 -->
+          <a href="/cw/cw-echo.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/ecobottle.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">倾诉瓶</div>
+              <div class="cw-title-en">EchoBottle</div>
+              <div class="cw-meta">June 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 2 -->
+          <a href="/cw/cw-flash.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/nsh.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">逆水寒快闪活动策划</div>
+              <div class="cw-title-en">Game Flash Event Planning</div>
+              <div class="cw-meta">June 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 3 -->
+          <a href="/cw/cw-childpain.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/painpal.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">儿童疼痛管理App</div>
+              <div class="cw-title-en">Child Pain Management App</div>
+              <div class="cw-meta">June 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 4 -->
+          <a href="/cw/cw-ankle.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/varioankle.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">可变刚度的康复矫具设计</div>
+              <div class="cw-title-en">VarioAnkle</div>
+              <div class="cw-meta">June 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 5 -->
+          <a href="/cw/cw-tissuebox.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/tissuebox.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">校园资讯小程序开发</div>
+              <div class="cw-title-en">TissueBox</div>
+              <div class="cw-meta">February 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 6 -->
+          <a href="/cw/cw-brand.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/doeast.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">东一线业品牌焕新方案</div>
+              <div class="cw-title-en">Brand Upgrade Strategy</div>
+              <div class="cw-meta">October 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 7 -->
+          <a href="/cw/cw-composition.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/spatial.png');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">空间构成</div>
+              <div class="cw-title-en">Spatial Composition</div>
+              <div class="cw-meta">June 2025</div>
+            </div>
+          </a>
+
+          <!-- coursework item 8 -->
+          <a href="/cw/cw-paper.html" class="cw-card">
+            <div class="cw-img" style="background-image:url('/img/paper.JPG');"></div>
+            <div class="cw-info">
+              <div class="cw-title-cn">浙大文创纸模设计</div>
+              <div class="cw-title-en">3D Modeling & Rendering</div>
+              <div class="cw-meta">July 2025</div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+</section>
+<!-- ================= EXTRACURRICULAR ================= -->
+<section id="extracurricular" class="extra-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="col-8">
+
+        <!-- title -->
+        <div class="extra-title">
+          课外活动 / <span style="font-weight:500;">Extracurricular Projects</span>
+        </div>
+
+        <div class="extra-subtitle">
+          在浙大学生社团求是潮中自学 2D 与 3D 动画技术，并参与制作两部社团宣传片。<br>
+          Self-taught 2D & 3D animation techniques in a student club and participated in producing two promotional videos.
+        </div>
+
+        <!-- grid -->
+        <div class="extra-grid">
+
+          <!-- Project 1 -->
+          <a href="/extra/extra-fall2024.html" class="extra-card">
+            <div class="extra-media">
+              <!-- DEFAULT STATIC IMAGE -->
+              <img class="extra-img" src="/img/extra-1.jpg" alt="thumbnail">
+
+              <!-- VIDEO ON HOVER -->
+              <video class="extra-video" 
+                  src="video/extra-1.mp4" 
+                  muted 
+                  autoplay 
+                  loop 
+                  playsinline 
+                  preload="auto"></video>
+
+            </div>
+
+            <div class="extra-info">
+              <div class="extra-title-cn">求是潮 2024 秋季纳新动画</div>
+              <div class="extra-title-en">3D Motion Graphics Animation Created with Blender</div>
+              <div class="extra-meta">September 2024</div>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="extra-spring2024.html" class="extra-card">
+            <div class="extra-media">
+              <img class="extra-img" src="/img/extra-2.png" alt="thumbnail">
+              <video class="extra-video" 
+                  src="video/extra-2.mp4" 
+                  muted 
+                  autoplay 
+                  loop 
+                  playsinline 
+                  preload="auto"></video>
+            </div>
+            <div class="extra-info">
+              <div class="extra-title-cn">求是潮 2024 春季纳新动画</div>
+              <div class="extra-title-en">2D Motion Graphics Animation Created with Ae</div>
+              <div class="extra-meta">February 2024</div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+
+      <!-- CENTER AREA -->
+      <div class="col-8">
+
+        <!-- Title -->
+        <div class="contact-title">
+          联系 / <span style="font-weight:500;">Contact</span>
+        </div>
+
+        <!-- Subtitle -->
+        <div class="contact-subtitle">
+          欢迎随时联系我，期待与您交流。<br>
+          Feel free to contact me anytime, I look forward to connecting with you.
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- LEFT: Photo -->
+          <div class="contact-photo">
+            <img src="/img/contact.JPG" alt="contact-photo">
+          </div>
+
+          <!-- RIGHT: Info -->
+          <div class="contact-info">
+
+            <!-- Email -->
+            <div class="contact-block">
+              <div class="contact-label">邮箱 / Email</div>
+              <div class="contact-value">czhihan@zju.edu.cn</div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-block">
+              <div class="contact-label">手机 / Phone Number</div>
+              <div class="contact-value">+86 13397642290</div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-block">
+              <div class="contact-label">地址 / Address</div>
+              <div class="contact-value">
+                浙江，杭州，浙江大学西溪校区<br>
+                Zhejiang University, Xixi Campus, Hangzhou, Zhejiang, China
+              </div>
+            </div>
+
+
+          </div><!-- end contact-info -->
+
+        </div><!-- end contact-grid -->
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="footer-line"></div>
+        <div class="footer-text">
+          Copyright © 曹之菡 / Cao Zhihan, Zhejiang University, All rights reserved.
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+</footer>
+
+<!-- 在文件底部 </body> 前加入脚本 -->
+<script>
+  (function () {
+    function showLock(card) {
+  const overlay = card.querySelector('.lock-overlay');
+  const text = card.querySelector('.project-text');
+  if (!overlay) return;
+
+  overlay.hidden = false;
+  overlay.classList.add('visible');
+  overlay.setAttribute('aria-hidden', 'false');
+
+  // 隐藏原文字
+  if (text) text.classList.add('hidden');
+}
+document.querySelectorAll('.locked-card').forEach(card => {
+  card.addEventListener('mouseleave', () => {
+    const overlay = card.querySelector('.lock-overlay');
+    const text = card.querySelector('.project-text');
+
+    // 重置
+    overlay.classList.remove('visible');
+    overlay.setAttribute('aria-hidden', 'true');
+    if (text) text.classList.remove('hidden');
+  });
+});
+
+
+    function onCardActivate(e) {
+      const card = e.target.closest && e.target.closest('.locked-card');
+      if (!card) return;
+      e.preventDefault();
+      showLock(card);
+    }
+
+    document.addEventListener('click', function (e) {
+      onCardActivate(e);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        const active = document.activeElement;
+        if (active && active.classList && active.classList.contains('locked-card')) {
+          e.preventDefault();
+          showLock(active);
+        }
+      }
+    });
+  })();
+</script>
+
+
+</body>
+</html>

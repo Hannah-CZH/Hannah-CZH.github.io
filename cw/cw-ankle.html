@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VarioAnkle</title>
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/gallery.css">
+  <script defer src="/js/gallery.js"></script>
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logo"><a href="/">Back</a></div>
+      <div class="col-6"></div>
+      <div class="col-4">
+        <ul>
+          <li>课内 / Coursework</li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= PROJECT DETAIL ======================= -->
+<section class="project-detail">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="col-8">
+
+        <!-- 标题部分 -->
+        <div class="project-title-block">
+          <h1 class="project-title-en">VarioAnkle</h1>
+          <h3 class="project-title-cn">智能可调刚度的踝关节康复支具</h3>
+          <p class="project-subtitle">课程：感知、通信与控制</p>
+        </div>
+
+        <!-- 图片集（16:9 框 + 缩略图） -->
+        <div class="project-gallery" data-current="0">
+          <div class="gallery-main">
+            <div class="gallery-main-inner">
+              <!-- 主图：JS 会根据缩略图 data-full 切换 -->
+              <img class="gallery-main-image" src="/img/coursework/ankle/封面.png" alt="封面">
+            </div>
+            <button class="gallery-arrow gallery-arrow-left" aria-label="上一张">&#10094;</button>
+            <button class="gallery-arrow gallery-arrow-right" aria-label="下一张">&#10095;</button>
+          </div>
+
+          <div class="gallery-thumbs" role="tablist" aria-label="图片缩略图">
+            <button class="gallery-thumb is-active" data-index="0" data-full="/img/coursework/ankle/封面.png" title="项目封面">
+              <img src="/img/coursework/ankle/封面.png" alt="项目封面缩略图">
+            </button>
+
+            <button class="gallery-thumb" data-index="1" data-full="/img/coursework/ankle/设计背景.png" title="设计背景">
+              <img src="/img/coursework/ankle/设计背景.png" alt="设计背景缩略图">
+            </button>
+
+            <button class="gallery-thumb" data-index="2" data-full="/img/coursework/ankle/产品结构.png" title="产品结构">
+              <img src="/img/coursework/ankle/产品结构.png" alt="产品结构缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="3" data-full="/img/coursework/ankle/使用情境.png" title="使用情境">
+              <img src="/img/coursework/ankle/使用情境.png" alt="使用情境缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="4" data-full="/img/coursework/ankle/技术路径.png" title="技术路径">
+              <img src="/img/coursework/ankle/技术路径.png" alt="技术路径缩略图">
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spatial Composition</title>
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/gallery.css">
+  <script defer src="/js/gallery.js"></script>
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logo"><a href="/">Back</a></div>
+      <div class="col-6"></div>
+      <div class="col-4">
+        <ul>
+          <li>课内 / Coursework</li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= PROJECT DETAIL ======================= -->
+<section class="project-detail">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="col-8">
+
+        <!-- 标题部分 -->
+        <div class="project-title-block">
+          <h1 class="project-title-en">空间构成</h1>
+          <h3 class="project-title-cn">模型设计与搭建训练</h3>
+          <p class="project-subtitle">课程：空间构成</p>
+        </div>
+
+        <!-- 图片集（16:9 框 + 缩略图） -->
+        <div class="project-gallery" data-current="0">
+          <div class="gallery-main">
+            <div class="gallery-main-inner">
+              <!-- 主图：JS 会根据缩略图 data-full 切换 -->
+              <img class="gallery-main-image" src="/img/coursework/composition/1.png" alt="封面">
+            </div>
+            <button class="gallery-arrow gallery-arrow-left" aria-label="上一张">&#10094;</button>
+            <button class="gallery-arrow gallery-arrow-right" aria-label="下一张">&#10095;</button>
+          </div>
+
+          <div class="gallery-thumbs" role="tablist" aria-label="图片缩略图">
+            <button class="gallery-thumb is-active" data-index="0" data-full="/img/coursework/composition/1.png" title="项目封面">
+              <img src="/img/coursework/composition/1.png" alt="项目封面缩略图">
+            </button>
+
+            <button class="gallery-thumb" data-index="1" data-full="/img/coursework/composition/2.png" title="设计背景">
+              <img src="/img/coursework/composition/2.png" alt="设计背景缩略图">
+            </button>
+
+            <button class="gallery-thumb" data-index="2" data-full="/img/coursework/composition/3.png" title="产品结构">
+              <img src="/img/coursework/composition/3.png" alt="产品结构缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="3" data-full="/img/coursework/composition/4.png" title="使用情境">
+              <img src="/img/coursework/composition/4.png" alt="使用情境缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="4" data-full="/img/coursework/composition/5.png" title="技术路径">
+              <img src="/img/coursework/composition/5.png" alt="技术路径缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="6" data-full="/img/coursework/composition/7.png" title="界面展示">
+              <img src="/img/coursework/composition/7.png" alt="界面展示缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="7" data-full="/img/coursework/composition/8.png" title="界面展示">
+              <img src="/img/coursework/composition/8.png" alt="界面展示缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="8" data-full="/img/coursework/composition/9.png" title="界面展示">
+              <img src="/img/coursework/composition/9.png" alt="界面展示缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="9" data-full="/img/coursework/composition/10.png" title="界面展示">
+              <img src="/img/coursework/composition/10.png" alt="界面展示缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="10" data-full="/img/coursework/composition/11.png" title="界面展示">
+              <img src="/img/coursework/composition/11.png" alt="界面展示缩略图">
+            </button>
+          <button class="gallery-thumb" data-index="11" data-full="/img/coursework/composition/12.png" title="界面展示">
+              <img src="/img/coursework/composition/12.png" alt="界面展示缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="12" data-full="/img/coursework/composition/13.png" title="界面展示">
+              <img src="/img/coursework/composition/13.png" alt="界面展示缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="13" data-full="/img/coursework/composition/14.png" title="界面展示">
+              <img src="/img/coursework/composition/14.png" alt="界面展示缩略图">
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

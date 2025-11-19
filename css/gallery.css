@@ -1,0 +1,171 @@
+/* =========================================
+   统一 16:9 图片集样式（适配所有 project 页面）
+   ========================================= */
+
+/* === 主容器 === */
+.project-gallery {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* === 16:9 容器 === */
+.gallery-main {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* ★ 固定 16:9 */
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 内层用于 contain 显示 */
+.gallery-main-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;       /* ★ 非 16:9 图完整显示 */
+  object-position: center;
+  cursor: zoom-in;
+  transition: transform .25s ease;
+}
+
+/* === 左右箭头 === */
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;        /* 去掉圆形底色 */
+  color: rgba(0,0,0,0.6);         /* 灰色箭头 */
+  font-size: 28px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .25s, color .15s;
+  padding: 8px;                   /* 保持合理点击区域 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  /* 不再设置宽高和圆角，避免圆形背景 */
+}
+
+/* 调整左右位置，靠近边缘但不占用大圆形空间 */
+.gallery-arrow-left { left: 8px; }
+.gallery-arrow-right { right: 8px; }
+
+/* 鼠标靠近显示箭头（保持原有行为） */
+.gallery-main:hover .gallery-arrow {
+  opacity: 1;
+}
+
+/* 悬停时箭头颜色变深 */
+.gallery-arrow:hover {
+  color: rgba(0,0,0,0.9);
+}
+
+/* === 缩略图区域 === */
+
+
+/* ====== 缩略图横向滚动 & 自适应尺寸 ====== */
+.gallery-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+
+  overflow-x: auto;                 /* 允许横向滚动，避免换行/重叠 */
+  -webkit-overflow-scrolling: touch; /* 移动端平滑滚动 */
+  padding-bottom: 6px;              /* 给滚动条留空间 */
+  scroll-snap-type: x proximity;    /* 可选：吸附到缩略图 */
+}
+
+/* 每个缩略图固定不缩放（防止被压扁），并在可视区中横向排列 */
+.gallery-thumb {
+  flex: 0 0 auto;   /* 不放大不收缩，按宽度占位 */
+  width: 100px;     /* 默认宽度，可根据需要调小 */
+  height: 60px;     /* 默认高度 */
+  border: 2px solid transparent;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #eee;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform .2s ease;
+  scroll-snap-align: center; /* 可选：吸附对齐 */
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 响应式：窄屏时再缩小缩略图 */
+@media (max-width: 900px) {
+  .gallery-thumb { width: 88px; height: 56px; }
+}
+@media (max-width: 480px) {
+  .gallery-thumb { width: 72px; height: 48px; gap: 8px; }
+}
+
+/* 可选：美化/隐藏滚动条（WebKit） */
+.gallery-thumbs::-webkit-scrollbar { height: 8px; }
+.gallery-thumbs::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 4px;
+}
+.gallery-thumbs::-webkit-scrollbar-track { background: transparent; }
+
+
+/* 选中态 */
+.gallery-thumb.is-active {
+  border-color: #666;      /* ★ 灰色边框 */
+}
+
+/* hover 上浮效果 */
+.gallery-thumb:hover {
+  transform: translateY(-3px);
+}
+
+/* === 缩略图 Tooltip（显示图片名称） === */
+.gallery-thumb:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,.75);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* === Lightbox 大图 === */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PainPal</title>
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/gallery.css">
+  <script defer src="/js/gallery.js"></script>
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logo"><a href="/">Back</a></div>
+      <div class="col-6"></div>
+      <div class="col-4">
+        <ul>
+          <li>课内 / Coursework</li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= PROJECT DETAIL ======================= -->
+<section class="project-detail">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="col-8">
+
+        <!-- 标题部分 -->
+        <div class="project-title-block">
+          <h1 class="project-title-en">PainPal</h1>
+          <h3 class="project-title-cn">儿童疼痛管理应用</h3>
+          <p class="project-subtitle">移动应用创新赛</p>
+        </div>
+
+        <!-- 图片集（16:9 框 + 缩略图） -->
+        <div class="project-gallery" data-current="0">
+          <div class="gallery-main">
+            <div class="gallery-main-inner">
+              <!-- 主图：JS 会根据缩略图 data-full 切换 -->
+              <img class="gallery-main-image" src="/img/coursework/painpal/P1.png" alt="Poster">
+            </div>
+            <button class="gallery-arrow gallery-arrow-left" aria-label="上一张">&#10094;</button>
+            <button class="gallery-arrow gallery-arrow-right" aria-label="下一张">&#10095;</button>
+          </div>
+
+          <div class="gallery-thumbs" role="tablist" aria-label="图片缩略图">
+            <button class="gallery-thumb is-active" data-index="0" data-full="/img/coursework/painpal/P1.png" title="项目海报">
+              <img src="/img/coursework/painpal/P1.png" alt="项目海报缩略图">
+            </button>
+
+            <button class="gallery-thumb" data-index="1" data-full="/img/coursework/painpal/P2.png" title="设计背景">
+              <img src="/img/coursework/painpal/P2.png" alt="设计背景缩略图">
+            </button>
+
+            <button class="gallery-thumb" data-index="2" data-full="/img/coursework/painpal/P3.png" title="竞品分析">
+              <img src="/img/coursework/painpal/P3.png" alt="竞品分析缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="3" data-full="/img/coursework/painpal/P4.png" title="儿童端交互流程">
+              <img src="/img/coursework/painpal/P4.png" alt="儿童端交互流程缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="4" data-full="/img/coursework/painpal/P5.png" title="家长端交互流程">
+              <img src="/img/coursework/painpal/P5.png" alt="家长端交互流程缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="5" data-full="/img/coursework/painpal/P6.png" title="创新点">
+              <img src="/img/coursework/painpal/P6.png" alt="创新点缩略图">
+            </button>
+            <button class="gallery-thumb" data-index="6" data-full="/img/coursework/painpal/P7.png" title="Logo">
+              <img src="/img/coursework/painpal/P7.png" alt="Logo缩略图">
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
