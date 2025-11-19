@@ -107,60 +107,6 @@ nav a {
 }
 
 
-/* 锁定卡片：覆盖层与样式 */
-/* 让锁卡覆盖原来的 overlay，但保持毛玻璃效果 */
-.project-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.project-card .lock-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  /* 重点：毛玻璃黑色透明背景 */
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-
-  border-radius: 20px;
-
-  /* 初始隐藏，不占位、不显示 */
-  opacity: 0;
-  pointer-events: none;
-
-  transition: opacity 0.2s ease;
-}
-
-/* 锁 icon，带阴影 */
-.lock-icon {
-  width: 72px;
-  margin-bottom: 18px;
-  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
-}
-
-/* 文本保持与小标题一致 */
-.lock-text {
-  color: white;
-  font-size: 24px;
-  font-family: SF Compact Display;
-  font-weight: 500;
-  text-shadow: 0 4px 4px rgba(0,0,0,0.25);
-  margin-top: 8px;
-}
-
-/* 为可访问性：点击后隐藏原文字 */
-.locked-card .project-text.hidden {
-  visibility: hidden;
-}
-
-
 /* ========== SECTION ========== */
 .section-title {
   font-size: 16px;

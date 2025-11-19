@@ -110,15 +110,8 @@
           </div>
         </div>
 
-        <!-- 锁提示层，默认隐藏，点击后显示 -->
-        <div class="lock-overlay" aria-hidden="true" hidden>
-          <img class="lock-icon" src="/img/lock.png" alt="锁定">
-          <div class="lock-text">论文投递中，暂未公开。</div>
-        </div>
-      </div>
-
     </div>
-
+</div>
     <!-- FULL WIDTH CARD: UIST -->
     <div class="project-grid-full">
       <a href="project-uist25.html">
@@ -133,7 +126,7 @@
       </a>
     </div>
 
-      </div>
+      
       <div class="col-1"></div>
     </div>
   </div>
@@ -399,56 +392,6 @@
   </div>
 </footer>
 
-<!-- 在文件底部 </body> 前加入脚本 -->
-<script>
-  (function () {
-    function showLock(card) {
-  const overlay = card.querySelector('.lock-overlay');
-  const text = card.querySelector('.project-text');
-  if (!overlay) return;
-
-  overlay.hidden = false;
-  overlay.classList.add('visible');
-  overlay.setAttribute('aria-hidden', 'false');
-
-  // 隐藏原文字
-  if (text) text.classList.add('hidden');
-}
-document.querySelectorAll('.locked-card').forEach(card => {
-  card.addEventListener('mouseleave', () => {
-    const overlay = card.querySelector('.lock-overlay');
-    const text = card.querySelector('.project-text');
-
-    // 重置
-    overlay.classList.remove('visible');
-    overlay.setAttribute('aria-hidden', 'true');
-    if (text) text.classList.remove('hidden');
-  });
-});
-
-
-    function onCardActivate(e) {
-      const card = e.target.closest && e.target.closest('.locked-card');
-      if (!card) return;
-      e.preventDefault();
-      showLock(card);
-    }
-
-    document.addEventListener('click', function (e) {
-      onCardActivate(e);
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        const active = document.activeElement;
-        if (active && active.classList && active.classList.contains('locked-card')) {
-          e.preventDefault();
-          showLock(active);
-        }
-      }
-    });
-  })();
-</script>
 
 
 </body>
