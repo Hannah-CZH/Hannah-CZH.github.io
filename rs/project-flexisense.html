@@ -55,10 +55,10 @@
         </div>
 
         <!-- Abstract 标题 -->
-        <h2 class="section-heading">Abstract</h2>
+        <h2 class="section-heading reveal">Abstract</h2>
 
         <!-- Abstract 英文 -->
-        <p class="abstract-en">
+        <p class="abstract-en reveal">
           We present FlexiSense, a democratized toolkit designed to retrofit everyday clothing
           into battery-free interfaces for gesture recognition. Users can develop smart textiles
           by connecting and strategically placing relevant modules on garments, guided by detailed
@@ -70,7 +70,7 @@
         </p>
 
         <!-- Abstract 中文 -->
-        <p class="abstract-cn">
+        <p class="abstract-cn reveal">
           我们提出了 FlexiSense，一款旨在将日常服饰转化为无需电池的手势识别界面的普及工具包。
           用户可以根据详细说明，将相关模块连接并巧妙地放置在衣物上，轻松打造智能纺织品。
           该系统通过电磁感应实现自供电，从用户的运动中收集动能。手势识别依赖于可伸缩的导电织物，
@@ -79,9 +79,9 @@
         </p>
 
         <!-- Mechanism 部分 -->
-        <h2 class="section-heading">Mechanism</h2>
+        <h2 class="section-heading reveal">Mechanism</h2>
 
-        <div class="mechanism-inner">
+        <div class="mechanism-inner reveal">
           <div class="mechanism-text">
             <p><b>能量收集:</b> 基于法拉第电磁感应定律,通过在手镯中集成磁铁和线圈，将手腕的运动转化为稳定的 5V 电源输出。</p>
             <p><b>动作识别:</b> 通过测量导电织物由于运动产生的电阻变化，检测身体运动，特别是在关节处的动作。</p>
@@ -90,6 +90,77 @@
             <img src="/img/research/flexisense/mechanism.png" alt="Mechanism" class="mechanism-img">
           </div>
         </div>
+        <!-- ========== Modular Components ========== -->
+        <h2 class="section-heading reveal">Modular Components</h2>
+
+        <div class="container modular-wrap">
+          <div class="row">
+            <div class="col-2"></div>
+            <!-- 左侧工具包图片 -->
+            <div class="col-3 modular-left reveal">
+              <img src="/img/research/flexisense/toolkit.png" class="toolkit-img">
+            </div>
+
+            <!-- 右侧滑动模块视窗 -->
+            <div class="col-5 modular-right reveal">
+              <div class="modules-scroll">
+
+                <!-- === Module 1 === -->
+                <div class="module-box reveal">
+                  <h3 class="module-title">1. 发电模块</h3>
+                  <p class="module-text">
+                    通过佩戴在手腕上的旋转线圈与磁体阵列，从自然的手腕运动中采集动能并转化为电能；
+                  </p>
+                  <div class="module-img-group">
+                    <img src="/img/research/flexisense/magnet.png">
+                    <img src="/img/research/flexisense/coil.png">
+                  </div>
+                </div>
+
+                <!-- === Module 2 === -->
+                <div class="module-box reveal delay-1">
+                  <h3 class="module-title">2. 信号处理模块</h3>
+                  <p class="module-text">
+                    包含导电织物与腕部设备，后者用于稳定发电模块输出的电能，
+                    处理织物电阻变化产生的传感信号，并控制输出模块；
+                  </p>
+                  <div class="module-img-group">
+                    <img src="/img/research/flexisense/signalboard.png">
+                    <img src="/img/research/flexisense/wristunit.png">
+                  </div>
+                </div>
+
+                <!-- === Module 3 === -->
+                <div class="module-box reveal delay-2">
+                  <h3 class="module-title">3. 输出模块</h3>
+                  <p class="module-text">
+                    提供三种低功耗反馈模块，分别用于产生视觉、听觉和触觉反馈；
+                  </p>
+                  <div class="module-img-group">
+                    <img src="/img/research/flexisense/eink.png">
+                    <img src="/img/research/flexisense/speaker.png">
+                    <img src="/img/research/flexisense/vibration.png">
+                  </div>
+                </div>
+
+                <!-- === Module 4 === -->
+                <div class="module-box reveal delay-3">
+                  <h3 class="module-title">4. 连接模块</h3>
+                  <p class="module-text">
+                    通过导电线和按扣式连接件实现简单且可靠的电气连接方式。
+                  </p>
+                  <div class="module-img-group single">
+                    <img src="/img/research/flexisense/connection.png">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-2"></div>
+          </div>
+        </div>
+
         </div>
 
       </div>
@@ -100,6 +171,6 @@
 
 </section>
 
-
+<script src="/rs/flexisense.js"></script>
 </body>
 </html>
