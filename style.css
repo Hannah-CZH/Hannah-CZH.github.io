@@ -625,10 +625,11 @@ nav a {
 
 /* Abstract 文本 */
 .abstract-en {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.2;
   font-family: "SF Pro Display", sans-serif;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+  font-weight:200;
 }
 
 .abstract-cn {
@@ -636,4 +637,5 @@ nav a {
   line-height: 1.2;
   font-family: "Alibaba PuHuiTi 3.0", sans-serif;
   margin-bottom: 80px;
+  font-weight:200;
 }

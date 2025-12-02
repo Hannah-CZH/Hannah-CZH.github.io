@@ -1,0 +1,77 @@
+/* flexisense.css */
+
+/* 标题样式 */
+.section-heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Mechanism 内容样式 */
+.mechanism-text p {
+  font-size: 18px;
+  font-family: Alibaba PuHuiTi 3.0, sans-serif;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* 图片样式 */
+.mechanism-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px #939393 solid;
+}
+
+/* 让图片和文本保持一致的宽度 */
+.mechanism-image {
+  text-align: center;
+  margin-top: 20px;  /* 保证图片与文本有适当间距 */
+}
+
+
+/* Mechanism 并排布局：左文右图，宽度与 abstract（col-8）对齐 */
+.mechanism-inner {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  width: 100%;         /* 占满当前 col-8 宽度 */
+  margin-top: 12px;
+}
+
+/* 文本占比略大，左对齐 */
+.mechanism-text {
+  flex: 1 1 60%;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* 图片占比略小，靠右并限制最大宽度，保证与 col-8 右边缘对齐 */
+.mechanism-image {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 靠右 */
+  max-width: 420px;          /* 根据需要调整最大宽度 */
+}
+
+.mechanism-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px #939393 solid;
+}
+
+/* 移动端垂直排列 */
+@media (max-width: 900px) {
+  .mechanism-inner {
+    flex-direction: column;
+  }
+  .mechanism-image {
+    justify-content: center;
+    max-width: 100%;
+  }
+}
