@@ -45,3 +45,28 @@ const io = new IntersectionObserver((entries)=>{
 });
 
 revealEls.forEach(el => io.observe(el));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const showElement = (entry) => {
+    entry.target.classList.add('show');
+  };
+
+  const options = {
+    threshold: 0.2,  // 触发浮现的距离阈值
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        showElement(entry);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  revealElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
